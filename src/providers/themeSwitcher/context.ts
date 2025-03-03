@@ -13,4 +13,6 @@ export const THEME_INITIAL_STATE: ITheme = "light";
 export const ThemeStateContext = createContext<ITheme>(THEME_INITIAL_STATE);
 
 
-export const ThemeActionsContext = createContext<IThemeActions>(undefined);
+export const ThemeActionsContext = createContext<IThemeActions>({
+    changeTheme: () => {}
+});
